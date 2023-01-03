@@ -27,8 +27,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     subtitle: Text(snapshot.data!.get('age').toString()),
                     trailing: IconButton(
                       onPressed: () {
+                        ///  update  property like this
                         // snapshot.data!.put('name', 'Sheikh Aman super Pro');
-
+                        /// delete method
                         snapshot.data!.delete('name');
                         setState(() {});
                       },
